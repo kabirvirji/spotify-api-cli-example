@@ -1,0 +1,7 @@
+{
+    "id": "346c66d6d5fe491e95824cff15c9a12c",
+    "redirect_uri": "http://localhost:3000/auth/callback",
+    "token_uri": "http://localhost:3000/auth/token",
+    "scope": "playlist-modify-public",
+    "spotify_token_expiration": 1
+}
