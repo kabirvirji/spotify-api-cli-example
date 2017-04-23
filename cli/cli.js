@@ -3,7 +3,7 @@ const lib = require('./lib');
 const utils = require('./utils');
 
 async function initialize() {
-  if (!lib.conf.has('init')) {
+  if (!lib.conf.has('has-init')) {
     // If has not been initialized yet, initialize it for the first time.    
     await lib.completeInitialAuth();
   } else {

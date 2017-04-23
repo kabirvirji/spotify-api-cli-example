@@ -16,10 +16,10 @@
     "got": "^6.7.1",
     "micro": "^7.3.2",
     "micro-route": "^2.3.0",
+    "mongorito": "^2.2.0",
     "open": "0.0.5",
     "ora": "^1.2.0",
     "p-retry": "^1.0.0",
-    "simple-json-storage": "0.0.2",
     "uuid": "^3.0.1"
   }
 }

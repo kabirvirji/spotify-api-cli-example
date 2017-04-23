@@ -3,5 +3,5 @@
     "redirect_uri": "http://localhost:3000/auth/callback",
     "token_uri": "http://localhost:3000/auth/token",
     "scope": "playlist-modify-public",
-    "spotify_token_expiration": 1
+    "spotify_token_expiration": 3600000
 }

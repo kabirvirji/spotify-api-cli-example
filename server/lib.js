@@ -1,22 +1,3 @@
-const {JSONStorage} = require('simple-json-storage');
-const store = new JSONStorage(process.env.TMP_STORE_LOCATION);
+const base64AuthHeader = `Basic ${new Buffer(`${process.env.CLIENT_ID}:${process.env.CLIENT_SECRET}`).toString('base64')}`;
 
-function write(key, value) {
-  try {
-    return store.setSync('data', key, value);
-  } catch (err) {
-    return false;
-  }
-}
-
-function read(key) {
-  try {
-    return store.getSync('data', key);
-  } catch (err) {
-    return false;
-  }
-}
-
-module.exports.store = store;
-module.exports.write = write;
-module.exports.read = read;
+module.exports.authHeader = base64AuthHeader;

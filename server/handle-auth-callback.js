@@ -1,6 +1,6 @@
 const url = require('url');
 const {post} = require('got');
-const lib = require('./lib');
+const database = require('./database');
 
 module.exports = async function(req, res) {
   // Get the "code" query string value
@@ -20,7 +20,7 @@ module.exports = async function(req, res) {
       }
     });
 
-    lib.write(id, body);
+    await database.create(id, body);
   } catch (err) {
     return 'Oops! Something went wrong. You can try restarting it!';
   }
