@@ -23,7 +23,7 @@ async function getEntry(id) {
 
 async function refreshToken(refreshToken) {
   try {
-    const newTokens = await post(process.env.SPOTIFY_TOKEN_REFRESH_ENDPOINT, {
+    const newTokens = await post(process.env.SPOTIFY_TOKEN_ENDPOINT, {
       headers: {
         Authorization: authHeader,
       },
